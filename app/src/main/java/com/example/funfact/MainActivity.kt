@@ -58,23 +58,23 @@ fun FunFact(){
             text = funFacts[currentIndex],
             fontSize = 22.sp,
             fontWeight = FontWeight.Bold,
-            color = Color.Red,
+            color = Color.Black,
             textAlign = TextAlign.Center,
-            modifier = Modifier.padding(18.dp).background((Color.Blue, shape = RoundedCornerShape(10.dp)).padding(18.dp))
+            modifier = Modifier.padding(18.dp).background(Color.Yellow, shape = RoundedCornerShape(10.dp)).padding(10.dp)
         )
 
         Button(
             onClick = {
                 currentIndex = Random.nextInt(funFacts.size)},
             modifier = Modifier.padding(top = 18.dp).width(140.dp).height(60.dp),
-            colors = ButtonDefaults.buttonColors(Color.Blue)
+            colors = ButtonDefaults.buttonColors(Color.LightGray)
 
         ){
             Text(
                 text = "Next",
-                fontSize = 18.sp,
-                color = Color.White,
-                fontWeight = FontWeight.Bold
+                fontSize = 22.sp,
+                color = Color.Red,
+                fontWeight = FontWeight.ExtraBold
             )
         }
     }
